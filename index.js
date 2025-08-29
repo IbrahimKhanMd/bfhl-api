@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware
+
 app.use(cors());
 app.use(express.json());
 
@@ -13,7 +13,7 @@ const USER_ID = "ibrahimkhan_14072004"; // Format: {full_name_ddmmyyyy}
 const EMAIL = "ibrahim.22bcb7267@vitapstudent.ac.in";
 const ROLL_NUMBER = "22BCB7267";
 
-// POST /bfhl endpoint
+
 app.post('/bfhl', (req, res) => {
     try {
         const { data } = req.body;
